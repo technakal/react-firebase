@@ -1,0 +1,19 @@
+.nav {
+  align-items: center;
+  background: lightgray;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+
+.navlinks {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  & li {
+    margin: 0 1rem;
+  }
+}

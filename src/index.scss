@@ -1,0 +1,75 @@
+@import './components/App/App.modules.scss';
+@import './components/Navigation/Navigation.module.scss';
+
+$font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+body {
+  font-family: $font-main;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+code {
+  font-family: $font-code;
+}
+
+a {
+  color: black;
+  font-weight: 700;
+  &.active {
+    color: slateblue;
+    text-decoration: underline;
+  }
+  text-decoration: none;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+button {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  margin: 0.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-submit {
+  background: rgb(24, 124, 255);
+  color: white;
+  &:hover {
+    background: rgb(54, 154, 255);
+  }
+}
+
+.btn-disabled {
+  background: rgb(135, 155, 175);
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 20px;
+}
+
+.centered {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
